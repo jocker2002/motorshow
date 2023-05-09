@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(245, 251, 255);
+}
+
+#car {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+#car td,
+#car th {
+    border: 0px;
+    padding: 8px;
+}
+
+#car td:first-child {
+    border-left: 2px solid #dbdfe2;
+}
+
+#car td:nth-child(5) {
+    border-right: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(1) td:nth-child(1) {
+    border-top: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(1) td:nth-child(2) {
+    border-top: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(1) td:nth-child(3) {
+    border-top: 2px solid #dbdfe2;
+    border-right: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(9) td:nth-child(1) {
+    border-bottom: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(9) td:nth-child(2) {
+    border-bottom: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(9) td:nth-child(3) {
+    border-bottom: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(9) td:nth-child(4) {
+    border-bottom: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(9) td:nth-child(5) {
+    border-bottom: 2px solid #dbdfe2;
+}
+
+#car tr:nth-child(odd) {
+    background-color: white;
+}
+
+#car tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/*
+  #car tr:hover {
+    background-color: #ddd;
+  }
+  */
+
+#car td {
+    padding: 10px;
+    width: 250px;
+    /*border: 2px solid #dbdfe2;*/
+}
+
+#car label {
+    margin-top: 8px;
+    font-size: 22px;
+    text-align: left;
+}
+
+#car div {
+    margin-top: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.car-item {
+    width: 250px;
+}
+
+.void {
+    width: 20px;
+}
+
+.blue-button {
+    background-color: #3795ff;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.blue-button:hover {
+    background-color: #2d74c4;
+    color: #ffffff;
+    text-decoration: none;
+}

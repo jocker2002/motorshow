@@ -1,0 +1,271 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/tesla-model-s.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+
+/* Zīmolu katalogs */
+
+.container-brand .checkmark:after {
+    left: 4px;
+    top: -1px;
+    width: 4px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg)
+}
+
+.container-brand {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 8px
+}
+
+@media (min-width:1200px) {
+    .container-brand {
+        max-width: 1140px;
+        padding: 10px 8px
+    }
+}
+
+.main-brands .catalog-brands {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.main-brands .catalog-brands .block-brand {
+    margin-bottom: 10px;
+    width: 8.3%
+}
+
+@media (max-width:1023px) {
+    .main-brands .catalog-brands .block-brand {
+        width: 12.5%
+    }
+}
+
+@media (max-width:767px) {
+    .main-brands .catalog-brands .block-brand {
+        margin-bottom: 5px;
+        width: 14.2%
+    }
+}
+
+@media (max-width:575px) {
+    .main-brands .catalog-brands .block-brand {
+        width: 20%
+    }
+}
+
+.main-brands .catalog-brands .block-brand>a {
+    border: 1px solid #eaeaea;
+    margin: 3px;
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: flex-end
+}
+
+@media (max-width:767px) {
+    .main-brands .catalog-brands .block-brand>a {
+        margin: 2px;
+        font-size: 10px
+    }
+}
+
+.main-brands .catalog-brands .block-brand>a .logo-brand {
+    width: 42px;
+    text-align: center
+}
+
+@media (max-width:767px) {
+    .main-brands .catalog-brands .block-brand>a .logo-brand {
+        width: 24px
+    }
+}
+
+.main-brands .catalog-brands .block-brand>a .logo-brand img {
+    width: 100%;
+    height: auto
+}
+
+.main-brands .catalog-brands .block-brand>a .name-brand {
+    width: 100%;
+    text-align: center
+}
+
+.main-brands .catalog-brands .block-brand>a:hover {
+    border-color: #1cb6bc;
+    /*#cc2128;*/
+    color: #1cb6bc
+}
+
+.margin-t1-b1 {
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
+.main-brands .catalog-brands .block-brand>a .logo-brand {
+    width: 42px;
+    text-align: center
+}
+
+@media (max-width:767px) {
+    .main-brands .catalog-brands .block-brand>a .logo-brand {
+        width: 24px
+    }
+}
+
+.main-brands .catalog-brands .block-brand>a .logo-brand img {
+    width: 100%;
+    height: auto
+}
+
+
+/* Mašīnu galerija */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/*
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.car-slides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: 0px;
+    color: rgba(0, 168, 242, 1);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    margin-right: 15px;
+    background-color: rgba(33, 37, 41, 0.8);
+}
+
+.prev {
+    border-radius: 0 5px 5px 0;
+    background-color: rgba(33, 37, 41, 0.8);
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 168, 242, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: rgba(0, 168, 242, 0.8);
+    font-size: 16px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(33, 37, 41, 0.8);
+    border-radius: 0 0 5px 0;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: rgba(0, 2, 98, 1);
+    padding: 2px 16px;
+    color: white;
+    font-size: 16px;
+    font-family: "Andale Mono", monospace;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.car-gif {
+    width: 100%;
+    max-height: 750px;
+    padding: center;
+}

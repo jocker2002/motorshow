@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(245, 251, 255);
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-catalog {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#page_main {
+    position: absolute;
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 0.5em;
+    background: white none repeat scroll 0 0;
+    border: 1px solid #c0c0c0;
+    overflow: hidden;
+    padding: 25px 15px;
+    transition: all 0.5s ease 0s;
+    margin: 5vh;
+}
+
+#page_main h1 {
+    font-size: 48px;
+}
+
+#page_main h2 {
+    font-size: 36px;
+}
+
+#page_main h3 {
+    font-weight: bold;
+}
+
+.page_table {
+    padding: 0 0 25px 25px;
+    font-size: 1em;
+    float: right;
+}
+
+#page_main .page_table table {
+    display: inline-block;
+    background-color: whitesmoke;
+    border: 1px solid rgb(41, 41, 41);
+    padding: 0.5em;
+    width: 18em;
+}
+
+#page_main .page_table table th {
+    padding-right: 2.5em;
+}
+
+#page_main .page_table table td {
+    padding: 10px 0;
+}
+
+#page_main .page_table table img {
+    width: 100%;
+}
+
+#page_main a {
+    color: darkblue;
+}
+
+#page_main hr {
+    display: grid;
+    border: 1px solid rgb(41, 41, 41);
+}
+
+#page_main .page_text {
+    font-size: 20px;
+}
+
+#page_main .brand-catalog {
+    display: flex;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 5px;
+    height: auto;
+}
+
+#page_main .brand-catalog:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+#page_main .brand-catalog:hover a {
+    color: dodgerblue;
+}
+
+div.brand-catalog:hover {
+    border: 1px solid #777;
+}
+
+.brand-catalog img {
+    display: block;
+    padding: 5% 0;
+    width: 100%;
+    height: auto;
+}
+
+figcaption.brand-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-img {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background: whitesmoke;
+    border: 1.5px solid rgb(170, 170, 170);
+    max-width: 410px;
+}
+
+.text-img img {
+    display: block;
+    max-width: 400px;
+    max-height: 400px;
+    border: 1.3px solid rgb(170, 170, 170);
+    padding: 3px;
+}
+
+.text-img figcaption {
+    display: block;
+    text-align: center;
+}
+
+.float-left {
+    margin: 10px 40px 10px 0;
+    float: left;
+}
+
+.float-left {
+    margin: 10px 40px 10px 0;
+    float: center;
+}
